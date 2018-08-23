@@ -8,6 +8,10 @@ body
 	width: 100%
 	margin: 0 auto
 	display: flex
+	+r(550)
+		display: block
+		text-align: center
+
 .contact-heading
 	font-weight: 600
 	margin-bottom: 7px
@@ -16,10 +20,10 @@ body
 .text
 	font-weight: 600
 
-.contact-info>*
-	margin-bottom: 35px
 .contact-tel_footer
 	margin-bottom: 14px
+	+r(320)
+	font-size: 14px
 .communications_footer
 	margin-top: 14px
 	line-height: 1.3
