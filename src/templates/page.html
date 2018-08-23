@@ -22,7 +22,13 @@
         <a href="#" class="nav-main__nav-link">flux</a>
       </li>
       <li>
-        <a href="#" class="nav-main__nav-link">flux for...</a>
+        
+        <a href="#" class="nav-main__nav-link">flux for...{{mixins.icon('menu-arrow')}}</a>
+        <ul class="submenu">
+          <li><a href="#">Something</a></li>
+          <li><a href="#">Something</a></li>
+          <li><a href="#">Something</a></li>
+        </ul>
       </li>
       <li>
         <a href="#" class="nav-main__nav-link">news</a>
@@ -31,7 +37,12 @@
         <a href="#" class="nav-main__nav-link">events</a>
       </li>
       <li>
-        <a href="#" class="nav-main__nav-link">about motto</a>
+        <a href="#" class="nav-main__nav-link">about motto{{mixins.icon('menu-arrow')}}</a>
+        <ul class="submenu">
+            <li><a href="">Something</a></li>
+            <li><a href="">Something</a></li>
+            <li><a href="">Something</a></li>
+          </ul>
       </li>
       <li>
         <a href="#" class="nav-main__nav-link">contact</a>
@@ -75,9 +86,12 @@
           <option value="JS">JS</option>
           <option value="INVIDER">INVIDER</option>
         </select>
+        <div class="button-data-wrapper">
         <button type="submit" class="btn btn_submit">
           SEND
         </button>
+        <p class="button-data-wrapper__text">{{mixins.icon('if_lock')}} Data is sent and stored securely</p>
+      </div>
       </div>
 <!-- --------END user-form__area---------- -->
     </form>
@@ -186,6 +200,7 @@
             <span class="contact-tel contact-tel_footer">
               <a href="tel:+31 (0)45 4040490">+31 (0)45 4040490</a>
             </span>
+            
           </address>
         </div>
       </div>
