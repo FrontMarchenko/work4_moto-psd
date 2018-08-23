@@ -1,0 +1,179 @@
+.header-main
+	padding: 28px 60px 
+	display: flex
+	max-width: 1120px
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+	flex-wrap: wrap
+.nav-wrapper
+	margin-left: auto
+	position: relative
+	bottom: 15px
+.nav-main
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__nav-link
+		// white-space: nowrap
+	li
+		text-transform: uppercase
+		margin-right: 22px
+		font-size: 12px
+		position: relative
+		display: flex
+		justify-content: center
+		padding: 8px 0px
+		&:hover:before
+			width: 100%
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			width: 0
+			height: 3px
+			background: #2effc0
+			transition: all .3s ease
+
+
+
+.baner
+	display: flex
+	align-items: center
+	min-height: 227px
+	padding-top: 245px
+	padding-bottom: 160px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 0 0
+	box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.07)
+	&__heading
+		color: #2effc0
+		font-size: 41px
+.lang-switcher
+	font-size: 12px
+	color: #fff
+	display: flex
+	justify-content: flex-end
+	margin-bottom: 12px
+	&__item
+		margin-left: 12px
+		position: relative
+		&:not(:last-child):before
+			content: "/"
+			position: absolute
+			left: calc(100% + 6.5px)
+
+
+.btn
+	border: none
+	border-radius: 50px
+	text-transform: uppercase
+	font-weight: 600
+	transition: all 1s ease
+	&_primary
+		background: #2effc0
+		font-size: 12px
+		padding: 7px 18px
+		color: #001029
+		&:hover
+			background: #001029
+			color: #2effc0
+	&_submit
+		font-size: 15px
+		color: #d2d5d9
+		background: #001029
+		padding: 6px 50px
+		justify-content: center
+		display: flex
+		margin: 0 auto
+		line-height: 2
+		&:hover
+			background: #2effc0
+
+.user-form
+	position: relative
+	bottom: 70px
+	background: #fff
+	border: 1px solid #fbfbfb
+	max-width: 260px
+	width: 100%
+	padding: 22px 27px 37px
+	border-radius: 16px
+	box-shadow: 1px 10px 33px rgba(0, 0, 0, 0.07)
+	margin-right: 65px
+
+	&__area
+		color: #001029
+		label
+			font-size: 12px
+			line-height: 2.79
+			font-weight: 600
+		input
+			border: 1px solid #dedede
+			border-radius: 5px
+			padding: 7px
+			border-radius: 4px
+			box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07)
+			line-height: 1.45
+			outline: none
+			transition: .18s ease-out
+			width: 100%
+			&:hover
+				box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02)
+			&:focus
+				color: #4b515d
+				border: 1px solid #B8B6B6
+				box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2)
+	&__description
+		font-size: 16px
+		color: #00112a
+		line-height: 1.25
+	& p
+		margin-bottom: 25px
+select
+	width: 100%
+	border: 1px solid #dedede
+	border-radius: 4px
+	box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07)
+	margin-bottom: 40px
+	&:focus,&:hover
+		background: #eeeeee
+	option
+		font-size: 16px
+		padding: 7px
+		text-align: center
+		
+		
+.user-contact-us
+	&__more
+		font-size: 15px
+		color: #001029
+		line-height: 1.2
+		padding-top: 50px
+.contact-info
+	max-width: 185px
+	width: 100%
+	&__sales
+		margin-bottom: 38px
+.footer
+	font-size: 16px
+	background: #001029
+	&__wrap
+		display: grid
+		grid-template-columns: repeat(4,1fr)
+		grid-gap: 65px
+		padding: 70px 0px
+		+r(820)
+			grid-template-columns: repeat(2,1fr)
+			margin: 0 auto
+			padding: 70px 15px
+.copyright
+	background: #001029
+	display: flex
+	justify-content: center
+	padding-bottom: 22px
+	font-size: 11px
+	line-height: 2.45
+	color: #fff
