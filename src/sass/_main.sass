@@ -1,10 +1,10 @@
 .header-main
-	padding: 2px 60px 
+	padding: 0px 82px 12px 58px 
 	display: flex
 	// max-width: 2024px
 	width: 100%
 	position: absolute
-	top: 0
+	top: 28px
 	left: 0
 	flex-wrap: wrap
 	+sofproreg
@@ -24,7 +24,7 @@
 	&__item
 		text-transform: uppercase
 		margin-right: 22px
-		font-size: 12px
+		font-size: 11px
 		position: relative
 		display: flex
 		justify-content: center
@@ -55,7 +55,7 @@
 	display: flex
 	align-items: center
 	min-height: 227px
-	padding-top: 204px
+	padding-top: 231px
 	padding-bottom: 154px
 	background-size: cover
 	background-repeat: no-repeat
@@ -73,6 +73,7 @@
 	&__heading
 		color: $color-main
 		font-size: 41px
+		margin-left: 3px
 		+r(800)
 			text-align: center
 		+r(320)
@@ -86,10 +87,11 @@
 	&__item
 		margin-left: 12px
 		position: relative
+		top: 7px
 		&:not(:last-child):before
 			content: "/"
 			position: absolute
-			left: calc(100% + 6.5px)
+			left: calc(100% + 3.5px)
 .nav__btn
 	text-align: right
 	display: none
@@ -120,8 +122,8 @@
 	transition: all 1s ease
 	&_primary
 		background: $color-main
-		font-size: 12px
-		padding: 7px 18px
+		font-size: 11px
+		padding: 0px 16px
 		color: #001029
 		&:hover
 			background: #001029
@@ -132,8 +134,11 @@
 		font-size: 15.5px
 		color: #d2d5d9
 		background: #001029
-		padding: 4px 45px 3px 45px
+		padding: 3px 45px 4px 45px
 		line-height: 2
+		margin-left: 67px
+		margin-right: 52px
+		text-align: center
 		&:hover
 			background: $color-main
 
@@ -144,11 +149,11 @@
 	border: 1px solid #fbfbfb
 	max-width: 260px
 	width: 100%
-	padding: 19px 34px 14px 25px
+	padding: 17px 36px 14px 23px
 	border-radius: 16px
 	box-shadow: 1px 10px 33px rgba(0, 0, 0, 0.07)
 	margin-right: 67px
-	margin-left: 80px
+	margin-left: 84px
 	+r(550)
 		margin: 0 auto
 
@@ -183,16 +188,16 @@
 	& p
 		margin-bottom: 21px
 select
-	width: 100%
+	width: 106%
 	border: 1px solid #dedede
 	border-radius: 4px
 	box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07)
-	margin-bottom: 46px
+	margin-bottom: 39px
 	&:focus,&:hover
 		background: #eeeeee
 	option
 		font-size: 16px
-		padding: 7px
+		padding: 11px
 		text-align: center
 
 .select-wrapper
@@ -202,7 +207,7 @@ select
 	&__more
 		font-size: 15.5px
 		color: #001029
-		padding-top: 50px
+		padding-top: 47px
 .contact-info
 	width: 200px
 	+r(550)
@@ -253,6 +258,7 @@ select
 	align-items: center
 	&__description
 		margin-top: 30px
+		margin-left: 9px
 		font-size: 10px
 		display: flex
 		align-items: center

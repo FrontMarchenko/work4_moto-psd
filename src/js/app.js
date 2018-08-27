@@ -8,9 +8,6 @@ $(document).on('click', function(event) {
   if(trigger !== event.target && !trigger.has(event.target).length) {
     $('.submenu').slideUp('fast');
   } 
-  else if(trigger !== !event.target) {
-    $('.submenu').toggleClass('submenu.is-active');
-  };           
 });
 
 $('.dropdown').click(function() {
