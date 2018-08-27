@@ -1,10 +1,15 @@
++font('sofiaproregular', 'sofiaproregular-webfont')
+=sofproreg
+	font-family: 'sofiaproregular',sans-serif
++font('sofiaprosoftbold', 'sofiaprosoftbold-webfont')
+=sofprosoftbold
+	font-family: 'sofiaprosoftbold',sans-serif
 body
 	background: #FFF
 	color: #fff
-	// +css-lock(16, 50, 600, 1000)
-	// line-height: 1.4
+	+sofproreg
 .container
-	max-width: 768px
+	max-width: 750px
 	width: 100%
 	margin: 0 auto
 	+r(550)
@@ -14,57 +19,78 @@ body
 		display: flex
 
 .contact-heading
-	font-weight: 600
-	margin-bottom: 7px
+	+sofprosoftbold
 	&_footer
-		margin-bottom: 16px
-.text
-	font-weight: 600
+		margin-bottom: 12px
+
+.contact-mail
+	&_text
+		+sofprosoftbold
+	&_footer
+		margin-bottom: 7px
+.contact-tel
+	&_text
+		+sofprosoftbold
+
+
+
 
 .contact-tel_footer
 	margin-bottom: 14px
 	+r(320)
 	font-size: 14px
 .communications_footer
-	margin-top: 14px
-	line-height: 1.3
+	line-height: 1
 .address_footer
 	line-height: 1.3
+	margin-bottom: 11px
 .info-corporate_footer
 	position: relative
 	&:before
 		position: absolute
-		left: calc(100% + 27px)
+		left: calc(100% + 34px)
 		content: '';
 		height: 100%
 		width: 1px
 		background: #929499
-// .icon-logo
-// 	fill: #000
+
 .icon-menu-arrow
 	margin-left: 5px
 
 .submenu
 	display: none
-	flex-direction: column
 	position: absolute
-	left: 0
-	padding-top: 15px
+	left: auto
+	margin-top: 20px
+	padding-top: 5px
 	z-index: 100
+	background: #929499
+	width: 100%
+	text-align: center
+	li
+		margin-bottom: 5px
+		&:hover
+			color: red
+		
 
-.is-active
-	display: flex
-	flex-direction: column
-	position: absolute
-	left: 0
-	padding-top: 15px
+
+// .submenu.is-active
+// 	display: block
+// 	position: absolute
+// 	left: 0
+// 	padding-top: 15px
+// 	z-index: 120
 .form-data
 	font-size: 10px
 .icon-if_lock
 	fill: #000
 	width: 12px
 	height: 16px
+	margin-right: 5px
 .icon-menu-arrow
 	width: 8px
 	height: 6px
 	align-self: center
+.icon-logo
+	font-size: 22px
+	margin-left: 31px

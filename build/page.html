@@ -26,59 +26,68 @@
               <a class="lang-switcher__link" href="#"> ru</a>
             </li>
           </ul>
-          <nav class="nav-main">
-            <li>
-              <a href="#" class="nav-main__nav-link">home</a>
-            </li>
-            <li>
-              <a href="#" class="nav-main__nav-link">flux</a>
-            </li>
-            <li>
-              <a href="#" class="nav-main__nav-link">flux for...
-                <svg class="icon icon-menu-arrow">
-                  <use xlink:href="img/sprite.svg#icon-menu-arrow"></use>
-                </svg>
-              </a>
-              <ul class="submenu">
-                <li>
-                  <a href="#">Something</a>
-                </li>
-                <li>
-                  <a href="#">Something</a>
-                </li>
-                <li>
-                  <a href="#">Something</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="nav-main__nav-link">news</a>
-            </li>
-            <li>
-              <a href="#" class="nav-main__nav-link">events</a>
-            </li>
-            <li>
-              <a href="#" class="nav-main__nav-link">about motto
-                <svg class="icon icon-menu-arrow">
-                  <use xlink:href="img/sprite.svg#icon-menu-arrow"></use>
-                </svg>
-              </a>
-              <ul class="submenu">
-                <li>
-                  <a href="">Something</a>
-                </li>
-                <li>
-                  <a href="">Something</a>
-                </li>
-                <li>
-                  <a href="">Something</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="nav-main__nav-link">contact</a>
-            </li>
-            <button class="btn btn_primary">try flux today</button>
+          <nav class="nav">
+            <div class="nav__btn js-burger">
+              <button data-target="#nav-main" type="button" class="btn-nav">
+                <span class="btn-nav__line"></span>
+                <span class="btn-nav__line"></span>
+                <span class="btn-nav__line"></span>
+              </button>
+            </div>
+            <ul class="nav__list" id="nav-main">
+              <li class="nav__item">
+                <a href="#" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">flux</a>
+              </li>
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link">flux for...
+                  <svg class="icon icon-menu-arrow">
+                    <use xlink:href="img/sprite.svg#icon-menu-arrow"></use>
+                  </svg>
+                </a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">Something</a>
+                  </li>
+                  <li>
+                    <a href="#">Something</a>
+                  </li>
+                  <li>
+                    <a href="#">Something</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">news</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">events</a>
+              </li>
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link">about motto
+                  <svg class="icon icon-menu-arrow">
+                    <use xlink:href="img/sprite.svg#icon-menu-arrow"></use>
+                  </svg>
+                </a>
+                <ul class="submenu">
+                  <li>
+                    <a href="">Something</a>
+                  </li>
+                  <li>
+                    <a href="">Something</a>
+                  </li>
+                  <li>
+                    <a href="">Something</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">contact</a>
+              </li>
+              <button class="btn btn_primary">try flux today</button>
+            </ul>
           </nav>
         </div>
       </header>
@@ -109,17 +118,19 @@
               <label for="form-email">Your business email address:</label>
               <input type="text" name="form-email" id="form-email">
               <label for="form-tel">Phone number(optional):</label>
-              <input type="text" name="form-tel" id="form-tel">
-              <label for="interested">I'm interested in bwcoming a...:</label>
-              <select name="select-interested" multiple size="1" class="select-interested">
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="JS">JS</option>
-                <option value="INVIDER">INVIDER</option>
-              </select>
+              <input type="text" name="form-tel" id="form-tel" class="form-tel">
+              <div class="select-wrapper">
+                <label for="interested">I'm interested in bwcoming a...:</label>
+                <select name="select-interested" multiple size="1" class="select-interested" id="select-interested">
+                  <option value="HTML">HTML</option>
+                  <option value="CSS">CSS</option>
+                  <option value="JS">JS</option>
+                  <option value="INVIDER">INVIDER</option>
+                </select>
+              </div>
               <div class="button-data-wrapper">
                 <button type="submit" class="btn btn_submit"> SEND </button>
-                <p class="button-data-wrapper__text">
+                <p class="button-data-wrapper__description">
                   <svg class="icon icon-if_lock">
                     <use xlink:href="img/sprite.svg#icon-if_lock"></use>
                   </svg> Data is sent and stored securely</p>
@@ -132,10 +143,10 @@
               <div class="info-sales">
                 <p class="contact-description"> Get in touch using the form
                   <br> or the information below: </p>
-                <span class="contact-mail text">
+                <span class="contact-mail contact-mail_text">
                   <a href="mailto:sales@motto.nl">sales@motto.nl</a>
                 </span>
-                <span class="contact-tel text">
+                <span class="contact-tel contact-tel_text">
                   <a href="tel:+31 (0)20 2170707">+31 (0)20 2170707</a>
                 </span>
               </div>
@@ -213,8 +224,10 @@
             <div class="footer__col">
               <div class="info-corporate info-corporate_footer">
                 <h3 class="contact-heading contact-heading_footer">Corporate</h3>
-                <address class="address address_footer"> Beersdalweg 104
-                  <br> 6412 PE Heerlen </address>
+                <address class="address address_footer">
+                  <p> Beersdalweg 104
+                    <br> 6412 PE Heerlen </p>
+                </address>
                 <address class="communications communications_footer">
                   <span class="contact-mail">
                     <a href="mailto:sales@motto.nl">sales@motto.nl</a>
