@@ -1,56 +1,3 @@
-.header-main
-	padding: 0px 82px 12px 58px 
-	display: flex
-	// max-width: 2024px
-	width: 100%
-	position: absolute
-	top: 28px
-	left: 0
-	flex-wrap: wrap
-	+sofproreg
-.nav-wrapper
-	margin-left: auto
-	position: relative
-	bottom: 15px
-	+r(800)
-		position: static
-.nav
-	display: flex
-	flex-wrap: wrap
-	+r(550)
-		justify-content: center
-	&__link
-		// white-space: nowrap
-	&__item
-		text-transform: uppercase
-		margin-right: 22px
-		font-size: 11px
-		position: relative
-		display: flex
-		justify-content: center
-		padding: 8px 0px
-		&:hover:before
-			width: 100%
-			+r(800)
-				width: 50%
-		&:before
-			content: ''
-			position: absolute
-			bottom: 0
-			width: 0
-			height: 3px
-			background: $color-main
-			transition: all .3s ease
-	&__list
-		display: flex
-		// flex-wrap: wrap
-		white-space: nowrap
-		+r(800)
-			display: none
-.nav__list_is-open
-	+r(800)
-		display: block
-
 .baner
 	display: flex
 	align-items: center
@@ -92,114 +39,6 @@
 			content: "/"
 			position: absolute
 			left: calc(100% + 3.5px)
-.nav__btn
-	text-align: right
-	display: none
-	+r(800)
-		display: block
-.btn-nav
-	border: 0
-	padding: 6px
-	cursor: pointer
-	border-radius: 4px
-	background: none
-	transition: all 1s ease
-	&:hover
-		background: $color-main
-	&__line
-		display: block
-		width: 20px
-		height: 2px
-		border-radius: 1px
-		background: #000
-		&:not(:last-child)
-			margin-bottom: 2px
-.btn
-	border: none
-	border-radius: 50px
-	text-transform: uppercase
-	+sofprosoftbold
-	transition: all 1s ease
-	&_primary
-		background: $color-main
-		font-size: 11px
-		padding: 0px 16px
-		color: #001029
-		&:hover
-			background: #001029
-			color: $color-main
-		+r(800)
-			margin-top: 10px
-	&_submit
-		font-size: 15.5px
-		color: #d2d5d9
-		background: #001029
-		padding: 3px 45px 4px 45px
-		line-height: 2
-		margin-left: 67px
-		margin-right: 52px
-		text-align: center
-		&:hover
-			background: $color-main
-
-.user-form
-	position: relative
-	bottom: 70px
-	background: #fff
-	border: 1px solid #fbfbfb
-	max-width: 260px
-	width: 100%
-	padding: 17px 36px 14px 23px
-	border-radius: 16px
-	box-shadow: 1px 10px 33px rgba(0, 0, 0, 0.07)
-	margin-right: 67px
-	margin-left: 84px
-	+r(550)
-		margin: 0 auto
-
-	&__area
-		color: #001029
-		label
-			font-size: 12px
-			line-height: 2.1
-			+sofprosoftbold
-			padding-left: 8px
-		input
-			border: 1px solid #dedede
-			border-radius: 7px
-			padding: 10px
-			border-radius: 4px
-			box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07)
-			line-height: 1.57
-			outline: none
-			transition: .18s ease-out
-			width: 106%
-			margin-bottom: 10px
-			&:hover
-				box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02)
-			&:focus
-				color: #4b515d
-				border: 1px solid #B8B6B6
-				box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2)
-	&__description
-		font-size: 15.5px
-		color: #00112a
-		line-height: 1.26
-	& p
-		margin-bottom: 21px
-select
-	width: 106%
-	border: 1px solid #dedede
-	border-radius: 4px
-	box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07)
-	margin-bottom: 39px
-	&:focus,&:hover
-		background: #eeeeee
-	option
-		font-size: 16px
-		padding: 11px
-		text-align: center
-
 .select-wrapper
 	margin-top: 8px
 .user-contact-us
@@ -227,23 +66,7 @@ select
 			margin-right: 5%
 	&__sales
 		margin-bottom: 38px
-.footer
-	font-size: 16.4px
-	background: #001029
-	& a
-		&:hover
-			color: $color-main
-	&__wrap
-		display: grid
-		grid-template-columns: repeat(4,1fr)
-		grid-gap: 46px
-		padding: 67px 0px
-		+r(820)
-			grid-template-columns: repeat(2,1fr)
-			margin: 0 auto
-			padding: 70px 15px
-.logo_footer
-	padding-top: 3px
+
 .copyright
 	background: #001029
 	display: flex
@@ -252,13 +75,3 @@ select
 	font-size: 11px
 	line-height: 1.1
 	color: #fff
-.button-data-wrapper
-	display: flex
-	flex-direction: column
-	align-items: center
-	&__description
-		margin-top: 30px
-		margin-left: 9px
-		font-size: 10px
-		display: flex
-		align-items: center

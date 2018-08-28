@@ -1,1 +1,74 @@
-<p>Hello from partials/_header.html</p>
+<!-- --------BEGIN header---------- -->
+<header class="header-main">
+  <div class="logo logo_main">
+    <a href="#">
+      <img src="img/logo.png" alt="Motto-Logo" class="logo-main__img"> </a>
+  </div>
+  <div class="nav-wrapper">
+    <ul class="lang-switcher">
+      <li class="lang-switcher__item">
+        <a class="lang-switcher__link" href="#">nl</a>
+      </li>
+      <li class="lang-switcher__item">
+        <a class="lang-switcher__link" href="#"> en</a>
+      </li>
+    </ul>
+    <nav class="nav">
+      <div class="nav__btn js-burger">
+        <button data-target="#nav-main" type="button" class="btn-nav">
+          <span class="btn-nav__line"></span>
+          <span class="btn-nav__line"></span>
+          <span class="btn-nav__line"></span>
+        </button>
+      </div>
+      <ul class="nav__list" id="nav-main">
+        <li class="nav__item">
+          <a href="#" class="nav__link">home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">flux</a>
+        </li>
+        <li class="nav__item dropdown">
+
+          <a href="#" class="nav__link">flux for...{{mixins.icon('menu-arrow')}}</a>
+          <ul class="submenu">
+            <li>
+              <a href="#">Something</a>
+            </li>
+            <li>
+              <a href="#">Something</a>
+            </li>
+            <li>
+              <a href="#">Something</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">news</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">events</a>
+        </li>
+        <li class="nav__item dropdown">
+          <a href="#" class="nav__link">about motto{{mixins.icon('menu-arrow')}}</a>
+          <ul class="submenu">
+            <li>
+              <a href="">Something</a>
+            </li>
+            <li>
+              <a href="">Something</a>
+            </li>
+            <li>
+              <a href="">Something</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">contact</a>
+        </li>
+        <button class="btn btn_primary">try flux today</button>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- --------END header---------- -->

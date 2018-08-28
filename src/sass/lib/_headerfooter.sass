@@ -1,0 +1,111 @@
+.header-main
+	padding: 0px 82px 12px 58px 
+	display: flex
+	// max-width: 2024px
+	width: 100%
+	position: absolute
+	top: 28px
+	left: 0
+	flex-wrap: wrap
+	+sofproreg
+.nav-wrapper
+	margin-left: auto
+	position: relative
+	bottom: 15px
+	+r(800)
+		position: static
+.nav
+	display: flex
+	flex-wrap: wrap
+	+r(550)
+		justify-content: center
+	&__link
+		// white-space: nowrap
+		+r(800)
+			display: inline-block
+			width: 100%
+			text-align: center
+	&__item
+		text-transform: uppercase
+		margin-right: 22px
+		font-size: 11px
+		position: relative
+		display: flex
+		justify-content: center
+		padding: 8px 0px
+		+r(800)
+			display: block
+			background: #bababa
+			float: none
+			line-height: 2
+			text-align: center
+			border-bottom: #ededed solid 1px
+			position: relative
+		&:hover:before
+			width: 100%
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			width: 0
+			height: 3px
+			background: $color-main
+			transition: all .3s ease
+	&__list
+		display: flex
+		// flex-wrap: wrap
+		white-space: nowrap
+		+r(800)
+			display: none
+.nav__list_is-open
+	+r(800)
+		display: block
+		position: absolute
+		right: 0
+		top: 60px
+		font-size: 14px
+		width: 320px
+		background: #bebebe
+		z-index: 999
+		color: #000
+	+r(492)
+		width: 100%
+.submenu
+	display: none
+	position: absolute
+	left: auto
+	top: 39px
+	padding-top: 5px
+	z-index: 100
+	background: #929499
+	width: 100%
+	text-align: center
+	li
+		margin-bottom: 5px
+		&:hover
+			color: #000
+		+r(800)
+			&:hover
+				color: #fff
+
+.footer
+	font-size: 16.4px
+	background: #001029
+	& a
+		&:hover
+			color: $color-main
+	&__wrap
+		display: grid
+		grid-template-columns: repeat(4,1fr)
+		grid-gap: 46px
+		padding: 67px 0px
+		+r(820)
+			grid-template-columns: repeat(2,1fr)
+			margin: 0 auto
+			padding: 70px 15px
+			grid-gap: 10px
+.logo_footer
+	padding-top: 3px
+	margin-left: 31px
+	+r(820)
+		margin-left: 0

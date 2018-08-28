@@ -54,44 +54,21 @@ body
 		height: 100%
 		width: 1px
 		background: #929499
-
-.icon-menu-arrow
-	margin-left: 5px
-
-.submenu
-	display: none
-	position: absolute
-	left: auto
-	margin-top: 20px
-	padding-top: 5px
-	z-index: 100
-	background: #929499
-	width: 100%
-	text-align: center
-	li
-		margin-bottom: 5px
-		&:hover
-			color: red
-		
+		+r(820)
+			left: calc(100% - 35px)
+		+r(750)
+			display: none
 
 
-// .submenu.is-active
-// 	display: block
-// 	position: absolute
-// 	left: 0
-// 	padding-top: 15px
-// 	z-index: 120
-.form-data
-	font-size: 10px
 .icon-if_lock
 	fill: #000
-	width: 12px
-	height: 16px
+	font-size: 12px
 	margin-right: 5px
 .icon-menu-arrow
-	width: 8px
-	height: 6px
+	font-size: 8px
 	align-self: center
+	margin-left: 5px
+.arrow-fill
+	fill: #0f0
 .icon-logo
 	font-size: 22px
-	margin-left: 31px

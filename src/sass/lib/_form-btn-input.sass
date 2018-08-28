@@ -1,0 +1,139 @@
+.nav__btn
+	text-align: right
+	display: none
+	+r(800)
+		display: block
+.btn-nav
+	position: absolute
+	display: inline-block
+	right: 20px
+	top: 20px
+	border: 0
+	padding: 6px
+	cursor: pointer
+	border-radius: 4px
+	background: none
+	transition: all 1s ease
+	&:hover
+		background: $color-main
+	&__line
+		display: block
+		width: 20px
+		height: 2px
+		border-radius: 1px
+		background: #000
+		&:not(:last-child)
+			margin-bottom: 2px
+.btn
+	border: none
+	border-radius: 50px
+	text-transform: uppercase
+	+sofprosoftbold
+	transition: all 1s ease
+	&_primary
+		background: $color-main
+		font-size: 11px
+		padding: 0px 16px
+		color: #001029
+		&:hover
+			background: #001029
+			color: $color-main
+		+r(800)
+			margin-top: 10px
+	&_submit
+		font-size: 15.5px
+		color: #d2d5d9
+		background: #001029
+		padding: 3px 45px 4px 45px
+		line-height: 2
+		margin-left: 67px
+		margin-right: 52px
+		text-align: center
+		&:hover
+			background: $color-main
+	+r(800)
+		display: none
+
+select
+	width: 106%
+	border: 1px solid #dedede
+	border-radius: 4px
+	box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07)
+	margin-bottom: 39px
+	&:focus,&:hover
+		background: #eeeeee
+	option
+		font-size: 16px
+		padding: 11px
+		text-align: center
+.user-form
+	position: relative
+	bottom: 70px
+	background: #fff
+	border: 1px solid #fbfbfb
+	max-width: 260px
+	width: 100%
+	padding: 17px 36px 14px 23px
+	border-radius: 16px
+	box-shadow: 1px 10px 33px rgba(0, 0, 0, 0.07)
+	margin-right: 67px
+	margin-left: 84px
+	+r(550)
+		margin: 0 auto
+.user-form
+	position: relative
+	bottom: 70px
+	background: #fff
+	border: 1px solid #fbfbfb
+	max-width: 260px
+	width: 100%
+	padding: 17px 36px 14px 23px
+	border-radius: 16px
+	box-shadow: 1px 10px 33px rgba(0, 0, 0, 0.07)
+	margin-right: 67px
+	margin-left: 84px
+	+r(550)
+		margin: 0 auto
+
+	&__area
+		color: #001029
+		label
+			font-size: 12px
+			line-height: 2.1
+			+sofprosoftbold
+			padding-left: 8px
+		input
+			border: 1px solid #dedede
+			border-radius: 7px
+			padding: 10px
+			border-radius: 4px
+			box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07)
+			line-height: 1.57
+			outline: none
+			transition: .18s ease-out
+			width: 106%
+			margin-bottom: 10px
+			&:hover
+				box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02)
+			&:focus
+				color: #4b515d
+				border: 1px solid #B8B6B6
+				box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2)
+	&__description
+		font-size: 15.5px
+		color: #00112a
+		line-height: 1.26
+	& p
+		margin-bottom: 21px
+.form-data
+	font-size: 10px
+.button-data-wrapper
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__description
+		margin-top: 30px
+		margin-left: 9px
+		font-size: 10px
+		display: flex
+		align-items: center

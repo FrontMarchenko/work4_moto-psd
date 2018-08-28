@@ -2,7 +2,7 @@ import sayHello from './lib/sayHello.js';
 
 sayHello();
 
-                                                   
+//submenu click                                            
 $(document).on('click', function(event) {
   var trigger = $('.dropdown');
   if(trigger !== event.target && !trigger.has(event.target).length) {
@@ -10,12 +10,18 @@ $(document).on('click', function(event) {
   } 
 });
 
-$('.dropdown').click(function() {
+$('.dropdown').click(function(e) {
+  e.preventDefault();
   $(this).find('.submenu').slideToggle('fast');
 }); 
 
-
-$('.js-burger').on('click', function() {
+//Mobile-menu burger
+$('.js-burger').on('click', function(e) {
+  e.preventDefault();
   var targetBtn = $(this).find('.btn-nav').data('target');
   $(targetBtn).toggleClass('nav__list_is-open');
 });
+
+
+
+
