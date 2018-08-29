@@ -10,8 +10,8 @@ $(document).on('click', function(event) {
   } 
 });
 
-$('.dropdown').click(function(e) {
-  e.preventDefault();
+$('.dropdown').click(function(event) {
+  event.preventDefault();
   $(this).find('.submenu').slideToggle('fast');
 }); 
 
